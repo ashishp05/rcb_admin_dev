@@ -1,0 +1,181 @@
+/*
+ * Riverside Cricket Box theme (green primary, lime secondary) — edit this file to customize the palette for the whole app.
+ * Light (:root) and dark (.dark) values are CSS variables consumed by Tailwind.
+ */
+
+:root {
+	--color-background: #ffffff;
+	--color-foreground: #000000;
+	--color-overlay: #ffffff;
+	--color-focus: #1d6b52;
+	--disabled-opacity: 0.7;
+
+	--color-default-50: #fafafa;
+	--color-default-100: #f2f2f3;
+	--color-default-200: #ebebec;
+	--color-default-300: #e3e3e6;
+	--color-default-400: #dcdcdf;
+	--color-default: #d4d4d8;
+	--color-default-600: #afafb2;
+	--color-default-700: #8a8a8c;
+	--color-default-800: #656567;
+	--color-default-900: #404041;
+	--color-default-foreground: #000000;
+
+	--color-primary-50: #e7f3ee;
+	--color-primary-100: #c3e2d4;
+	--color-primary-200: #9bcfb8;
+	--color-primary-300: #6fb99a;
+	--color-primary-400: #3f9b78;
+	--color-primary: #1d6b52;
+	--color-primary-600: #175a45;
+	--color-primary-700: #124836;
+	--color-primary-800: #0d3027;
+	--color-primary-900: #07201a;
+	--color-primary-foreground: #ffffff;
+
+	--color-secondary-50: #f8fde6;
+	--color-secondary-100: #eefac0;
+	--color-secondary-200: #e3f694;
+	--color-secondary-300: #d8f468;
+	--color-secondary-400: #cff34f;
+	--color-secondary: #c8f23a;
+	--color-secondary-600: #a6cc22;
+	--color-secondary-700: #7f9d18;
+	--color-secondary-800: #586e10;
+	--color-secondary-900: #333f09;
+	--color-secondary-foreground: #1e2a00;
+
+	--color-success-50: #e2f8ec;
+	--color-success-100: #b9efd1;
+	--color-success-200: #91e5b5;
+	--color-success-300: #68dc9a;
+	--color-success-400: #40d27f;
+	--color-success: #17c964;
+	--color-success-600: #13a653;
+	--color-success-700: #0f8341;
+	--color-success-800: #0b5f30;
+	--color-success-900: #073c1e;
+	--color-success-foreground: #000000;
+
+	--color-warning-50: #fff1e4;
+	--color-warning-100: #fedebd;
+	--color-warning-200: #fdcb97;
+	--color-warning-300: #fcb871;
+	--color-warning-400: #fca44a;
+	--color-warning: #fb9124;
+	--color-warning-600: #cf781e;
+	--color-warning-700: #a35e17;
+	--color-warning-800: #774511;
+	--color-warning-900: #4b2c0b;
+	--color-warning-foreground: #000000;
+
+	--color-danger-50: #ffdfdf;
+	--color-danger-100: #ffb3b3;
+	--color-danger-200: #ff8686;
+	--color-danger-300: #ff5959;
+	--color-danger-400: #ff2d2d;
+	--color-danger: #ff0000;
+	--color-danger-600: #d20000;
+	--color-danger-700: #a60000;
+	--color-danger-800: #790000;
+	--color-danger-900: #4d0000;
+	--color-danger-foreground: #000000;
+
+	--color-content1: #ffffff;
+	--color-content1-foreground: #000000;
+	--color-content2: #f4f4f5;
+	--color-content2-foreground: #000000;
+	--color-content3: #e4e4e7;
+	--color-content3-foreground: #000000;
+	--color-content4: #d4d4d8;
+	--color-content4-foreground: #000000;
+}
+
+.dark {
+	--color-background: #000000;
+	--color-foreground: #ffffff;
+	--color-overlay: #000000;
+	--color-focus: #3f9b78;
+
+	--color-default-50: #0d0d0e;
+	--color-default-100: #19191c;
+	--color-default-200: #26262a;
+	--color-default-300: #323238;
+	--color-default-400: #3f3f46;
+	--color-default: #3f3f46;
+	--color-default-600: #65656b;
+	--color-default-700: #8c8c90;
+	--color-default-800: #b2b2b5;
+	--color-default-900: #ffffff;
+	--color-default-foreground: #ffffff;
+
+	--color-primary-50: #07201a;
+	--color-primary-100: #0d3027;
+	--color-primary-200: #124836;
+	--color-primary-300: #175a45;
+	--color-primary-400: #2a8466;
+	--color-primary: #3f9b78;
+	--color-primary-600: #6fb99a;
+	--color-primary-700: #9bcfb8;
+	--color-primary-800: #c3e2d4;
+	--color-primary-900: #e7f3ee;
+	--color-primary-foreground: #ffffff;
+
+	--color-secondary-50: #333f09;
+	--color-secondary-100: #586e10;
+	--color-secondary-200: #7f9d18;
+	--color-secondary-300: #a6cc22;
+	--color-secondary-400: #c8f23a;
+	--color-secondary: #c8f23a;
+	--color-secondary-600: #d8f468;
+	--color-secondary-700: #e3f694;
+	--color-secondary-800: #eefac0;
+	--color-secondary-900: #f8fde6;
+	--color-secondary-foreground: #1e2a00;
+
+	--color-success-50: #073c1e;
+	--color-success-100: #0b5f30;
+	--color-success-200: #0f8341;
+	--color-success-300: #13a653;
+	--color-success-400: #17c964;
+	--color-success: #17c964;
+	--color-success-600: #68dc9a;
+	--color-success-700: #91e5b5;
+	--color-success-800: #b9efd1;
+	--color-success-900: #e2f8ec;
+	--color-success-foreground: #000000;
+
+	--color-warning-50: #4b2c0b;
+	--color-warning-100: #774511;
+	--color-warning-200: #a35e17;
+	--color-warning-300: #cf781e;
+	--color-warning-400: #fb9124;
+	--color-warning: #fca44a;
+	--color-warning-600: #fcb871;
+	--color-warning-700: #fdcb97;
+	--color-warning-800: #fedebd;
+	--color-warning-900: #fff1e4;
+	--color-warning-foreground: #000000;
+
+	--color-danger-50: #4d0000;
+	--color-danger-100: #790000;
+	--color-danger-200: #a60000;
+	--color-danger-300: #d20000;
+	--color-danger-400: #ff0000;
+	--color-danger: #ff2d2d;
+	--color-danger-600: #ff5959;
+	--color-danger-700: #ff8686;
+	--color-danger-800: #ffb3b3;
+	--color-danger-900: #ffdfdf;
+	--color-danger-foreground: #000000;
+
+	--color-content1: #18181b;
+	--color-content1-foreground: #ffffff;
+	--color-content2: #27272a;
+	--color-content2-foreground: #ffffff;
+	--color-content3: #3f3f46;
+	--color-content3-foreground: #ffffff;
+	--color-content4: #52525b;
+	--color-content4-foreground: #ffffff;
+}

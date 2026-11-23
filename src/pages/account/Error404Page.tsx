@@ -1,0 +1,33 @@
+import { Link } from 'react-router-dom';
+import { Routing } from '../../routes/routing';
+import Error404 from '../../assets/404.svg'
+
+const Error404Page = () => {
+  return (
+    <div className='flex justify-center items-center flex-col h-screen w-full bg-background text-foreground'>
+      <div className="mb-10">
+        <img
+          src={Error404}
+          className="max-h-[160px] dark:invert"
+          alt="image"
+        />
+      </div>
+
+      <span className="badge badge-primary badge-outline mb-3">404 Error</span>
+
+      <h3 className="text-3xl font-semibold mb-2 text-foreground">
+        We have lost this page
+      </h3>
+
+      <div className="text-md text-default-700 mb-10">
+        The requested page is missing. Check the URL or&nbsp;
+        <Link to={Routing.Dashboard} className="text-primary font-medium hover:text-primary-active">
+          Go to the desk home
+        </Link>
+        .
+      </div>
+    </div>
+  );
+};
+
+export default Error404Page;

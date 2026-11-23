@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Riverside Cricket Box">
+  <defs>
+    <radialGradient id="ball" cx="34%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#f1f1f1"/>
+      <stop offset="1" stop-color="#c9c9c9"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0d3027"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#c8f23a" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="32" cy="32" r="17" fill="url(#ball)"/>
+  <path d="M26 17.5c-3 9-3 20 0 29" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M38 17.5c3 9 3 20 0 29" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
